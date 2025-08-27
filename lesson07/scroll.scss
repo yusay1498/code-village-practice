@@ -1,0 +1,16 @@
+.slide{
+    position: relative;
+    .slide-item{
+        position: absolute;
+        width: 500px;
+        list-style: none;
+        opacity: 0;
+        transition: opacity 2s;
+        &.appear{
+            opacity: 1;
+        }
+        img{
+            width: 100%;
+        }
+    }
+}

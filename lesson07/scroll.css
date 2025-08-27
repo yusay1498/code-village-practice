@@ -1,0 +1,18 @@
+.slide {
+  position: relative;
+}
+.slide .slide-item {
+  position: absolute;
+  width: 500px;
+  list-style: none;
+  opacity: 0;
+  transition: opacity 2s;
+}
+.slide .slide-item.appear {
+  opacity: 1;
+}
+.slide .slide-item img {
+  width: 100%;
+}
+
+/*# sourceMappingURL=scroll.css.map */

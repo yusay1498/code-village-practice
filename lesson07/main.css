@@ -1,0 +1,12 @@
+section{
+    height: 80vh;
+    background-color: gray;
+}
+
+ul.menu{
+    position: fixed;
+    right: 0;
+    background-color: white;
+    list-style: none;
+    padding: 1em;
+}
