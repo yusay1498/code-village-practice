@@ -1,0 +1,63 @@
+header{
+    height: 40px;
+    margin-top: 68px;
+    margin-left: 77px;
+    display: flex;
+    letter-spacing: 0.16em;
+    position: absolute;
+    z-index: 10;
+    @include tab{
+        justify-content: space-between;
+        margin: 24px auto;
+        width: 90%;
+        position: unset;
+    }
+    .f-t{
+        font-size: 38px;
+        padding-right: 20px;
+        @include tab{
+            padding: 0;
+            font-size: 22px;
+        }
+    }
+    .menu{
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        @include tab {
+            display: none;
+        }
+        &__t{
+            padding-right: 5px;
+            span{
+                text-decoration: underline;
+            }
+        }
+        &__l{
+            display: flex;
+            li{
+                margin-left: 15px;
+                color: #707070;
+            }
+        }
+    }
+    .ham{
+        display: none;
+        @include tab{
+        width: 25px;
+        height: 14px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+            span{
+            display: inline-block;
+            width: 100%;
+            height: 1px;
+            background-color: #3B4043;
+        }
+                .short{
+                    width: 50%;
+                }
+        }
+    }
+}

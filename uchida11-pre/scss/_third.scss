@@ -1,0 +1,76 @@
+.menu{
+    .menu-wrap{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 10px;
+        @include tab{
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 63px;
+        }
+        .m_img{
+            text-align: center;
+            width: 26%;
+            font-family: Roboto Mono for Powerline;
+            @include tab{
+                width: 100%;
+                text-align: left;
+            }
+            &__1{
+                background-image: url(../img/component-3.png);
+                height: 271px;
+                background-size: cover;
+                margin-bottom: 37px;
+                @include tab{
+                    background-image: url(../img-2/component-3.png);
+                    margin-top: 50px;
+                    margin-bottom: 0;
+                }
+            }
+            &__2{
+                background-image: url(../img/component-4.png);
+                height: 271px;
+                background-size: cover;
+                margin-bottom: 37px;
+                @include tab{
+                    background-image: url(../img-2/component-4.png);
+                    margin-top: 50px;
+                    margin-bottom: 0;
+                }
+            }
+            &__3{
+                background-image: url(../img/component-5.png);
+                height: 271px;
+                background-size: cover;
+                margin-bottom: 37px;
+                @include tab{
+                    background-image: url(../img-2/component-5.png);
+                    margin-top: 50px;
+                    margin-bottom: 0;
+                }
+            }
+            &__title{
+                font-size: 30px;
+                margin-bottom: 34px;
+                @include tab{
+                    margin: 30px 4%;
+                }
+            }
+            &__tx{
+                font-size: 16px;
+                margin-bottom: 34px;
+                @include tab{
+                    margin: 0 4% 26px;
+                }
+            }
+            &__yen{
+                font-size: 16px;
+                text-align: right;
+                @include tab{
+                    margin-right: 4%;
+                    margin-bottom: 13px;
+                }
+            }
+        }
+    }
+}

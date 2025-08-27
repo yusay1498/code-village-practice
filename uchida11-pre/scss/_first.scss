@@ -1,0 +1,74 @@
+.catch{
+    height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    white-space: nowrap;
+    @include tab{
+        position: unset;
+        width: 100vw;
+        height: 159.2vh;
+    }
+    &__copy{
+        width: 46%;
+        position: absolute;
+        left: 8%;
+        z-index: 5;
+        @include tab{
+            width: 76.8%;
+            left: unset;
+            color: #FFFFFF;
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-wrap:wrap;
+            -ms-flex-wrap:wrap;
+            flex-wrap: wrap;
+        }
+        &__j{
+            font-family: ヒラギノ明朝 Pro; 
+            font-size: 38px;
+            margin-bottom: 48px;
+            padding-left: 50px;
+            @include tab{
+                -webkit-box-ordinal-group: 2;
+                -ms-flex-order: 2;
+                -webkit-order: 2;
+                order: 2;
+                padding-top: 10px;
+                font-size: 9vw;
+                text-shadow: 0 3px 16px #000000;
+            }
+        }
+        &__e{
+            font-family: Zapfino;
+            font-size: 40px;
+            width: 65%;
+            @include tab{
+                height: 16%;
+                width: 100%;
+                -webkit-box-ordinal-group: 1;
+                -ms-flex-order: 1;
+                -webkit-order: 1;
+                order: 1;
+                font-size: 9vw;
+                text-shadow: 0 3px 16px #000000;
+            }
+        }
+    }
+    &__img{
+        background-image: url(../img/component-1.png);
+        background-size: cover;
+        position: absolute;
+        right: 0;
+        height: 100%;
+        width: 54%;
+        @include tab{
+            background-image: url(../img-2/component.png);
+            position: unset;
+            width: 100%;
+        }
+    }
+}

@@ -1,0 +1,72 @@
+.concept{
+    height: 967px;
+    background: linear-gradient(to bottom,#A193861F 0%,#A193861F 42%,#A1938689 42%,#A1938689 100%);
+    @include tab{
+        width: 100%;
+        height: 150vh;
+    }
+    .wrap{
+        .concept-img{
+            margin-top: 3px;
+            display: flex;
+            justify-content: space-between;
+            height: 413px;
+            &__l{
+                background-image: url(../img/andrew-neel-f480QIEvwGI-unsplash.png);
+                background-size: cover;
+                background-position: 100%;
+                width: 60%;
+                @include tab{
+                    background-image: url(../img-2/component-1.png);
+                    width: 49%;
+                }
+            }
+            &__r{
+                background-image: url(../img/component-2.png);
+                background-size: cover;
+                background-position: 100%;
+                width: 38%;
+                @include tab{
+                    background-image: url(../img-2/component-2.png);
+                    width: 49%;
+                }
+            }
+        }
+        .concept-tx{
+            margin: 70px 70px 0;
+            display: flex;
+            justify-content: space-between;
+            color: #FFF;
+            text-align: center;
+            @include tab{
+                flex-direction: column;
+                align-items: center;
+                margin: 0 auto;
+            }
+            &__ti{
+                margin-top: 4px;
+                font-family: ヒラギノ明朝 Pro;
+                font-size: 40px;
+                width: 42%;
+                letter-spacing: 0.4em;
+                @include tab{
+                    width: 100%;
+                    font-size: 5vw;
+                    margin-top: 50px;
+                }
+            }
+            &__tx{
+                width: 40%;
+                font-size: 16px;
+                font-family: ヒラギノ角ゴ Pro;
+                @include tab{
+                    width: 100%;
+                    font-size: 5vw;
+                    margin-top: 18px;
+                }
+            }
+        }
+    }
+}
+
+
